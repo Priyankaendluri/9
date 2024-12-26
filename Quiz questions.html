@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Welcome to the Quiz!</h1>
+        <p>Test your knowledge by answering the questions below.</p>
+
+        <form id="quiz-form">
+            <div class="question">
+                <p>1. What is the capital of France?</p>
+                <label><input type="radio" name="q1" value="Paris"> Paris</label><br>
+                <label><input type="radio" name="q1" value="London"> London</label><br>
+                <label><input type="radio" name="q1" value="Berlin"> Berlin</label><br>
+            </div>
+            
+            <div class="question">
+                <p>2. Who wrote 'Romeo and Juliet'?</p>
+                <label><input type="radio" name="q2" value="Shakespeare"> William Shakespeare</label><br>
+                <label><input type="radio" name="q2" value="Hemingway"> Ernest Hemingway</label><br>
+                <label><input type="radio" name="q2" value="Dickens"> Charles Dickens</label><br>
+            </div>
+            
+            <div class="question">
+                <p>3. What is the square root of 16?</p>
+                <label><input type="radio" name="q3" value="4"> 4</label><br>
+                <label><input type="radio" name="q3" value="5"> 5</label><br>
+                <label><input type="radio" name="q3" value="6"> 6</label><br>
+            </div>
+
+            <button type="button" onclick="submitQuiz()">Submit</button>
+        </form>
+
+        <div id="result" class="result" style="display:none;">
+            <h2>Your Score: <span id="score">0</span>/3</h2>
+            <button onclick="resetQuiz()">Try Again</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
